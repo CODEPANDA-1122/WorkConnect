@@ -1,0 +1,253 @@
+.channel {
+  flex: 0.7;
+  flex-grow: 1;
+  display: flex;
+}
+
+.channel__chat {
+  flex: 1;
+}
+
+.channel__details {
+  flex: 0.4;
+  border-left: 1px solid lightgray;
+}
+
+.hide__details {
+  display: none;
+}
+
+.channel__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  border-bottom: 1px solid lightgray;
+}
+
+.channel__messages {
+  overflow-y: auto;
+  height: calc(100vh - 35%);
+}
+
+.channel__channelName {
+  display: flex;
+  align-items: center;
+  text-transform: lowercase;
+}
+
+.channel__channelName > .MuiSvgIcon-root {
+  margin-left: 10px;
+  font-size: 16px;
+}
+
+.channel__channelName > strong {
+  display: flex;
+  align-items: center;
+}
+
+.channel__channelName > strong > .MuiSvgIcon-root {
+  font-size: 14px;
+}
+
+.channel__headerRight {
+  display: flex;
+  align-items: center;
+}
+
+.channel__headerRight > .MuiSvgIcon-root {
+  margin-left: 15px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.channel__headerRight > .MuiSvgIcon-root:hover {
+  transform: scale(1.3);
+  transition: all 0.3s ease-in-out;
+}
+
+.channel__chatInput {
+  border-radius: 20px;
+}
+
+.channel__chatInput > form {
+  display: flex;
+  justify-content: center;
+}
+
+.channel__chatInput > form > input {
+  width: 90%;
+  border: 1px solid gray;
+  border-radius: 3px;
+  padding: 20px;
+  margin: 10px;
+}
+
+.channel__chatInput > form > input:focus {
+  outline: none;
+}
+
+.channel__chatInput > form > button {
+  display: none !important;
+}
+
+.channel__messages::-webkit-scrollbar,
+.channel__detailsBody::-webkit-scrollbar {
+  width: 0.8em;
+}
+
+.channel__messages::-webkit-scrollbar-thumb,
+.channel__detailsBody::-webkit-scrollbar-thumb {
+  background-color: darkgrey;
+  outline: none;
+  border-radius: 9px;
+}
+
+.channel__detailsActions {
+  padding: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.channel__detailsActions > span {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.channel__detailsActions .MuiSvgIcon-root {
+  background-color: whitesmoke;
+  padding: 10px;
+  border-radius: 50px;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+
+.channel__detailsActions > .MuiSvgIcon-root:hover {
+  background-color: lightgray;
+}
+
+.channel__detailsBody {
+  overflow-y: auto;
+  height: calc(100vh - 112px);
+}
+
+.channel__detailsBody > hr {
+  border: none;
+  border-bottom: 1px solid lightgray;
+}
+
+.channel__detailsMembers {
+  margin: 30px;
+}
+
+.channel__detailsMembers > .available__member {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: 600;
+  color: black;
+  margin: 10px 0;
+}
+
+.channel__detailsMembers > .available__member > a {
+  text-decoration: none;
+  color: black;
+}
+
+.channel__detailsMembers > .available__member > .MuiAvatar-root {
+  border-radius: 9px;
+  width: 25px;
+  height: 25px;
+  margin-right: 10px;
+}
+
+.channel__detailsMembers > .available__member > .MuiSvgIcon-root {
+  font-size: 14px;
+  margin-left: 10px;
+  margin-top: 3px;
+  cursor: pointer;
+}
+
+.channel__detailsMembers > .available__member > .MuiSvgIcon-root:last-child {
+  color: black;
+}
+
+.channel__detailsMembers
+  > .available__member
+  > .MuiSvgIcon-root:last-child:hover {
+  transform: scale(1.3);
+  transition: all 0.3s ease-in-out;
+}
+
+.channel__detailsMembers > h4 {
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+
+.isOnline > .MuiSvgIcon-root {
+  color: green;
+}
+
+.channel__detailsForm {
+  padding: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.channel__detailsForm > button {
+  text-transform: inherit !important;
+  background-color: #0a8d48;
+  color: white;
+  border: 1px solid #0a8d48;
+  line-height: 1.13;
+  border-radius: 9px;
+}
+
+.channel__detailsForm > button:hover {
+  background-color: transparent;
+  color: #0a8d48;
+}
+
+.channel__detailsForm > input {
+  padding: 5px;
+  border: 1px solid lightgray;
+  border-radius: 9px;
+}
+
+#loading {
+  display: inline-block;
+  width: 8px !important;
+  height: 8px !important;
+  border: 3px solid rgb(255 255 255);
+  border-radius: 50%;
+  border-top-color: #0a8d48;
+  animation: spin 1s ease-in-out infinite;
+  -webkit-animation: spin 1s ease-in-out infinite;
+}
+
+#loading:hover {
+  border: 3px solid #0a8d48;
+  border-top-color: rgb(255 255 255);
+}
+
+@keyframes spin {
+  to {
+    -webkit-transform: rotate(360deg);
+  }
+}
+@-webkit-keyframes spin {
+  to {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+.MuiButton-root.deleteBtn {
+  color: red;
+  text-transform: capitalize;
+  padding: 0 !important;
+}

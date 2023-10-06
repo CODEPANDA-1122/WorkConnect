@@ -1,0 +1,363 @@
+.user {
+  flex: 0.7;
+  flex-grow: 1;
+  display: flex;
+}
+
+.user__chat {
+  flex: 1;
+}
+
+.user__details {
+  flex: 0.4;
+  border-left: 1px solid lightgray;
+}
+
+.hide__details {
+  display: none;
+}
+
+.user__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  border-bottom: 1px solid lightgray;
+}
+
+.user__messages {
+  overflow-y: auto;
+  height: calc(100vh - 35%);
+}
+
+.user__userName {
+  display: flex;
+  align-items: center;
+  text-transform: lowercase;
+}
+
+.user__userName > .MuiSvgIcon-root {
+  margin-left: 10px;
+  font-size: 16px;
+}
+
+.user__userName > strong {
+  display: flex;
+  align-items: center;
+}
+
+.user__userName > strong > .MuiSvgIcon-root {
+  font-size: 14px;
+}
+
+.user__headerRight {
+  display: flex;
+  align-items: center;
+}
+
+.user__headerRight > .MuiSvgIcon-root {
+  margin-left: 15px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.user__headerRight > .MuiSvgIcon-root:hover {
+  transform: scale(1.3);
+  transition: all 0.3s ease-in-out;
+}
+
+.user__chatInput {
+  border-radius: 20px;
+}
+
+.user__chatInput > form {
+  display: flex;
+  justify-content: center;
+}
+
+.user__chatInput > form > input {
+  width: 90%;
+  border: 1px solid gray;
+  border-radius: 3px;
+  padding: 20px;
+  margin: 10px;
+}
+
+.user__chatInput > form > input:focus {
+  outline: none;
+}
+
+.user__chatInput > form > button {
+  display: none !important;
+}
+
+.user__messages::-webkit-scrollbar,
+.user__detailsBody::-webkit-scrollbar {
+  width: 0.8em;
+}
+
+.user__messages::-webkit-scrollbar-thumb,
+.user__detailsBody::-webkit-scrollbar-thumb {
+  background-color: darkgrey;
+  outline: none;
+  border-radius: 9px;
+}
+
+.user__detailsActions {
+  padding: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.user__detailsActions > span {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.user__detailsActions .MuiSvgIcon-root {
+  background-color: whitesmoke;
+  padding: 10px;
+  border-radius: 50px;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+
+.user__detailsActions > .MuiSvgIcon-root:hover {
+  background-color: lightgray;
+}
+
+.user__detailsBody {
+  overflow-y: auto;
+  height: calc(100vh - 112px);
+}
+
+.user__detailsBody > hr {
+  border: none;
+  border-bottom: 1px solid lightgray;
+}
+
+.user__detailsMembers {
+  margin: 30px;
+}
+
+.available__member {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: 600;
+  color: black;
+  margin: 10px 0;
+}
+
+.available__member > a {
+  text-decoration: none;
+  color: black;
+}
+
+.available__member > .MuiAvatar-root {
+  border-radius: 9px;
+  width: 25px;
+  height: 25px;
+  margin-right: 10px;
+}
+
+.available__member > .MuiSvgIcon-root {
+  font-size: 14px;
+  margin-left: 10px;
+  margin-top: 3px;
+  cursor: pointer;
+}
+
+.available__member > .MuiSvgIcon-root:last-child {
+  color: black;
+}
+
+.available__member > .MuiSvgIcon-root:last-child:hover {
+  transform: scale(1.3);
+  transition: all 0.3s ease-in-out;
+}
+
+.user__detailsMembers > h4 {
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+
+.isOnline > .MuiSvgIcon-root {
+  color: green;
+}
+
+.user__detailsForm {
+  padding: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.user__detailsForm > button {
+  text-transform: inherit !important;
+  background-color: #0a8d48;
+  color: white;
+  border: 1px solid #0a8d48;
+  line-height: 1.13;
+  border-radius: 9px;
+}
+
+.user__detailsForm > button:hover {
+  background-color: transparent;
+  color: #0a8d48;
+}
+
+.user__detailsForm > input {
+  padding: 5px;
+  border: 1px solid lightgray;
+  border-radius: 9px;
+}
+
+.user__detailsIdentity {
+  text-align: center;
+  padding: 20px;
+}
+
+.user__detailsIdentity > img {
+  border-radius: 9px;
+}
+
+.user__detailsIdentity > h4 {
+  font-size: 15px;
+  font-weight: 500;
+  text-transform: capitalize;
+  margin-top: 10px;
+}
+
+.user__detailsIdentity > h4 > .MuiSvgIcon-root {
+  font-size: 12px;
+  margin-left: 5px;
+}
+
+#loading {
+  display: inline-block;
+  width: 8px !important;
+  height: 8px !important;
+  border: 3px solid rgb(255 255 255);
+  border-radius: 50%;
+  border-top-color: #0a8d48;
+  animation: spin 1s ease-in-out infinite;
+  -webkit-animation: spin 1s ease-in-out infinite;
+}
+
+#loading:hover {
+  border: 3px solid #0a8d48;
+  border-top-color: rgb(255 255 255);
+}
+
+@keyframes spin {
+  to {
+    -webkit-transform: rotate(360deg);
+  }
+}
+@-webkit-keyframes spin {
+  to {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+#callScreen {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  /* visibility: hidden; */
+}
+
+.showCaller {
+  visibility: visible;
+}
+
+.callScreen {
+  background-color: #000000c4;
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  z-index: 99999;
+}
+
+.callScreen__container {
+  display: grid;
+  place-items: center;
+  margin-top: 25vh;
+  width: 80%;
+}
+
+.callScreen__container > h4 {
+  margin: 30px 0;
+  color: white;
+}
+
+.callScreen__btns {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 35%;
+  margin-top: 30px;
+}
+
+.callScreen__btns > button {
+  border-radius: 50%;
+  min-height: 40px;
+  min-width: 40px;
+}
+
+.callScreen__btns > button:first-child {
+  background-color: green;
+}
+
+.callScreen__btns > button:last-child {
+  background-color: red;
+}
+
+.callScreen__btns > button .MuiSvgIcon-root {
+  color: white;
+}
+
+.call-animation {
+  background: #fff;
+  width: 135px;
+  height: 135px;
+  position: relative;
+  margin: 0 auto;
+  border-radius: 100%;
+  border: solid 5px #fff;
+  overflow: hidden;
+  animation: play 2s ease infinite;
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -ms-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+.callScreen__container > img {
+  width: 135px;
+  height: 135px;
+  border-radius: 100%;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+}
+@keyframes play {
+  0% {
+    transform: scale(1);
+  }
+  15% {
+    box-shadow: 0 0 0 5px rgba(255, 255, 255, 0.4);
+  }
+  25% {
+    box-shadow: 0 0 0 10px rgba(255, 255, 255, 0.4),
+      0 0 0 20px rgba(255, 255, 255, 0.2);
+  }
+  25% {
+    box-shadow: 0 0 0 15px rgba(255, 255, 255, 0.4),
+      0 0 0 30px rgba(255, 255, 255, 0.2);
+  }
+}
