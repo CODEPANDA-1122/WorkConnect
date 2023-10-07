@@ -1,17 +1,17 @@
-# How to Build a Team Messenger Site With React (Slack Clone)
+# How to Build a Team Messenger Site With React (WorkConnect)
 
-Read the full tutorial here: [**>> How to Build a Team Messenger Site With React (Slack Clone)**](https://www.cometchat.com/tutorials/#)
+Read the full tutorial here: [**>> How to Build a Team Messenger Site With React (WorkConnect)**](https://www.cometchat.com/tutorials/#)
 
-This example shows How to Build a Team Messenger Site With React (Slack Clone):
+This example shows How to Build a Team Messenger Site With React (WorkConnect):
 
-![Slack Clone](./screenshots/0.gif)
-<center><figcaption>Slack Clone</figcaption></center>
+![WorkConnect](./screenshots/0.gif)
+<center><figcaption>WorkConnect</figcaption></center>
 
-![Slack Clone](./screenshots/1.png)
-<center><figcaption>Slack Clone Call Screen</figcaption></center>
+![WorkConnect](./screenshots/1.png)
+<center><figcaption>WorkConnect Call Screen</figcaption></center>
 
-![Slack Clone](./screenshots/2.png)
-<center><figcaption>Slack Clone Login Screen</figcaption></center>
+![WorkConnect](./screenshots/2.png)
+<center><figcaption>WorkConnect Login Screen</figcaption></center>
 
 ## Technology
 

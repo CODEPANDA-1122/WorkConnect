@@ -13,7 +13,7 @@ function Home() {
     <div className="home">
       <div className="home__container">
         <img src="/logo.png" alt="Slack Logo" />
-        <h1>Welcome to WorkConnet</h1>
+        <h1>Welcome to WorkConnect</h1>
         <p>
           WorkConnect brings all your team communication into one place, makes it all
           instantly searchable and available wherever you go.

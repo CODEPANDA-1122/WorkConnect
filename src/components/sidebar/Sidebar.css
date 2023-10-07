@@ -49,7 +49,7 @@
   font-size: 14px;
   margin-top: 1px;
   margin-right: 2px;
-  color: green;
+  color: rgb(18, 168, 18);
 }
 
 .sidebar__options {
@@ -82,7 +82,7 @@
   outline: none;
   border: none;
   background-color: #340e36;
-  color: white;
+  color: rgb(231, 215, 215);
   cursor: pointer;
 }
 
