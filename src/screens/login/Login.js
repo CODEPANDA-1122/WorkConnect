@@ -65,7 +65,7 @@ function Login() {
         <img src={'/logo.png'} alt="Slack Logo" />
 
         <h4>Sign in to WorkConnect</h4>
-        <p>Site Name</p>
+        {/* <p>Site Name</p> */}
         <Button onClick={signIn}>
           {!loading ? 'Sign In With Google' : <div id="loading"></div>}
         </Button>
